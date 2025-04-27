@@ -8,10 +8,20 @@
   padding: 16px;
 }
 
-.i {
+.i-g {
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+}
+.i-m {
   width: 32px;
   height: 32px;
-  font-size: 32px;
+  font-size: 24px;
+}
+.i-p {
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
 }
 
 .logo {
@@ -58,6 +68,11 @@
   align-items: center;
   justify-content: end;
 }
+.flex-end-center {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -68,10 +83,9 @@
 }
 
 .main-bg {
-  background-color: var(--color-primary-one);
-  /*background-image: url('./assets/main-bg.svg');
+  background-image: url('./assets/backgrounds/main-bg.svg');
   background-size: cover;
-  background-position: center center;*/
+  background-position: center center;
 }
 
 .light-bg {

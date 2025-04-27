@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
-import halfPartLogoOne from "../../assets/half-part-logo-one.svg";
-import halfPartLogoTwo from "../../assets/half-part-logo-two.svg";
+import halfPartLogoOne from "../../assets/frames/half-part-logo-one.svg";
+import halfPartLogoTwo from "../../assets/frames/half-part-logo-two.svg";
 
 function Header() {
   return (

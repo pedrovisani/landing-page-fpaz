@@ -125,6 +125,7 @@ button:hover {
   
 }
 button:active {
+  color: var(--font-dark);
   background-color: transparent;
   border: 1px solid rgba(58, 77, 75, 0.8);
 }
