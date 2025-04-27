@@ -110,7 +110,6 @@
     opacity: 1;
   }
 }
-
 @keyframes bottom-appear {
   0% {
     bottom: 0rem;
@@ -160,7 +159,6 @@
     opacity: 1;
   }
 }
-
 @keyframes logo-subname-appear {
   0% {
     right: 0;

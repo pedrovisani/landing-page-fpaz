@@ -8,49 +8,50 @@ function Product03({ setProductTab }) {
         className={`${styles["i-return"]} flex-center i-p icon-arrow-left`}
       ></i>
       <div className={styles["product-details"]}>
-        <div className="flex-column gap-20">
+        <div className="flex-column gap-28">
           <p className={styles["product-details-title"]}>
             ANTECIPAÇÃO DO SAQUE FGTS
           </p>
-          <p className={styles["product-details-description"]}>
+          <div className={styles["product-details-description"]}>
             <p>
-              A antecipação do saque FGTS é uma operação financeira em que o
-              trabalhador usa o valor que tem direito a sacar futuramente do seu
-              Fundo de Garantia do Tempo de Serviço (FGTS) como garantia para
-              obter um crédito imediato junto a uma instituição financeira. É
-              como um "empréstimo" que já tem o saldo do FGTS como pagamento
-              assegurado, o que resulta em juros mais baixos em comparação a
-              outras modalidades de crédito.
+              Antecipe hoje o seu saque-aniversário FGTS com rapidez, segurança
+              e sem burocracia!
             </p>
-            <ul>
+            <p>
+              A <strong>antecipação do FGTS</strong> é uma linha de crédito
+              exclusiva para quem optou pelo saque-aniversário. Com ela, você
+              pode acessar o valor futuro das suas parcelas anuais de forma
+              imediata, sem precisar esperar o mês do saque. Assim, você utiliza
+              o seu saldo disponível para realizar seus planos, quitar dívidas
+              ou fazer novos investimentos.
+            </p>
+            <ol>
               <li>
-                <b>Como funciona</b>:{" "}
+                <h1>
+                  <strong>Como funciona</strong>:
+                </h1>
                 <ul>
                   <li>
-                    O trabalhador precisa estar habilitado para o
-                    saque-aniversário do FGTS.
+                    Você solicita a antecipação de até 10 parcelas futuras do
+                    seu saque-aniversário.
                   </li>
                   <li>
-                    Ele solicita a antecipação em um banco ou instituição
-                    financeira que ofereça esse serviço.
+                    O valor é liberado diretamente na sua conta em poucos
+                    minutos, sujeito à aprovação.
                   </li>
                   <li>
-                    O banco adianta o valor de uma ou mais parcelas futuras do
-                    saque-aniversário.
-                  </li>
-                  <li>
-                    O pagamento da dívida acontece automaticamente: quando o
-                    saque-aniversário cair, o FGTS libera o valor diretamente
-                    para o banco, sem necessidade de o trabalhador realizar
-                    depósitos.
+                    As parcelas são quitadas automaticamente com os valores
+                    futuros do FGTS, sem afetar seu orçamento mensal.
                   </li>
                 </ul>
               </li>
               <li>
-                <b>O que é o saque-aniversário?</b>:{" "}
+                <h1>
+                  <strong>O que é o saque-aniversário?</strong>
+                </h1>
                 <p>
                   Antes de entender a antecipação, é importante saber o que é o{" "}
-                  <b>saque-aniversário</b>:
+                  <strong>saque-aniversário</strong>:
                 </p>
                 <ul>
                   <li>
@@ -63,66 +64,65 @@ function Product03({ setProductTab }) {
                     continue recebendo a multa de 40% normalmente.
                   </li>
                   <p>
-                    <b>Para fazer a antecipação</b>, é obrigatório ter aderido ao
-                    saque-aniversário.
+                    <strong>Para fazer a antecipação</strong>, é obrigatório ter
+                    aderido ao saque-aniversário.
                   </p>
                 </ul>
               </li>
               <li>
-                <b>Quem Pode Contratar</b>: Servidores públicos (municipais,
-                estaduais ou federais). Aposentados e pensionistas do INSS.
-                Trabalhadores de empresas privadas que possuem convênio com o
-                banco. Em alguns casos, militares também têm condições
-                específicas de contratação.
+                <h1>
+                  <strong>Quem pode contratar?</strong>
+                </h1>{" "}
+                <ul>
+                  <li>Aposentados e pensionistas do INSS.</li>
+                  <li>Servidores públicos federais, estaduais e municipais.</li>
+                  <li>Trabalhadores de empresas privadas conveniadas.</li>
+                </ul>
               </li>
               <li>
-                <b>Principais Características</b>: Desconto automático: Como o
-                pagamento é garantido diretamente na fonte (salário ou
-                benefício), as instituições oferecem juros mais baixos.
+                <h1>
+                  <strong>Vantagens</strong>:
+                </h1>
+                <ul>
+                  <li>
+                    Crédito rápido e sem burocracia: contratação 100% online.
+                  </li>
+                  <li>
+                    Taxas de juros reduzidas: menores que empréstimos
+                    convencionais.
+                  </li>
+                  <li>
+                    Sem consulta ao SPC ou Serasa: o saldo do FGTS é a garantia
+                    da operação.
+                  </li>
+                  <li>Liberação imediata: dinheiro na conta após aprovação.</li>
+                  <li>
+                    Pagamento automático: abatimento direto do FGTS, sem
+                    boletos.
+                  </li>
+                </ul>
               </li>
               <li>
-                <b>Limite de margem consignável</b>: Existe um teto para o valor
-                da parcela mensal, chamado margem consignável. Em geral, ela é
-                de 30% a 35% da renda líquida do tomador, dependendo da
-                categoria (por exemplo, para aposentados do INSS, pode chegar a
-                35%, sendo 5% exclusivos para cartão consignado).
+                <h1>
+                  <strong>Requisitos</strong>:
+                </h1>
+                <ul>
+                  <li>Ter saldo disponível no FGTS.</li>
+                  <li>Ter optado pelo saque-aniversário.</li>
+                  <li>
+                    Autorizar a financeira a consultar seu saldo no aplicativo
+                    FGTS ou no site da Caixa.
+                  </li>
+                  <li>Estar com o CPF regularizado.</li>
+                </ul>
+                <p>
+                  Garanta seu dinheiro <strong>agora mesmo</strong> e conquiste
+                  seus objetivos com mais liberdade e segurança!
+                </p>
               </li>
-              <li>
-                <b>Prazos longos</b>: Os prazos para pagamento podem chegar a 84
-                meses (7 anos), dependendo do perfil do contratante e da
-                instituição.
-              </li>{" "}
-              <li>
-                <b>Menos burocracia</b>: Em geral, a aprovação é mais rápida,
-                porque o risco para o banco é baixo.
-              </li>{" "}
-              <li>
-                <b>Vantagens do Crédito Consignado</b>: Juros baixos:
-                Normalmente, são as menores taxas do mercado para empréstimos
-                pessoais. Facilidade de aprovação: Mesmo quem tem restrições no
-                nome (negativado) pode conseguir o crédito. Organização
-                financeira: O desconto automático ajuda a manter o controle dos
-                pagamentos.
-              </li>{" "}
-              <li>
-                <b>Desvantagens e Riscos</b>: Comprometimento de renda: Uma
-                parcela fixa é descontada todo mês, reduzindo a margem de
-                manobra financeira. Endividamento: A facilidade de acesso pode
-                levar a contratações irresponsáveis. Dependência de emprego: No
-                caso de trabalhadores da iniciativa privada, a perda do emprego
-                pode gerar problemas para o pagamento do saldo devedor.
-                Renovação compulsiva: Muitas vezes, os tomadores renovam
-                empréstimos antes de terminar o contrato anterior, aumentando a
-                dívida.
-              </li>{" "}
-              <li>
-                <b>ATENÇÃO ESPECIAL</b>: Sempre verifique a taxa de juros anual
-                (CET – Custo Efetivo Total). Evite intermediários que cobram
-                taxas para "facilitar" o processo. Não aceite ofertas de crédito
-                sem analisar bem as condições.
-              </li>
-            </ul>
-          </p>
+            </ol>
+          </div>
+          <button>Faça uma simulação</button>
         </div>
       </div>
     </div>

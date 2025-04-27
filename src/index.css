@@ -81,6 +81,10 @@ i {
   width: 20px;
 }
 
+ul {
+  display: inline-block;
+}
+
 li {
   list-style-type: none;
 }

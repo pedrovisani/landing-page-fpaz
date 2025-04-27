@@ -3,88 +3,83 @@ import styles from "../Products.module.css";
 function Product06({ setProductTab }) {
   return (
     <div className="flex-end-center wh-100 pr">
-      <i
-        onClick={() => setProductTab("")}
-        className={`${styles["i-return"]} flex-center i-p icon-arrow-left`}
-      ></i>
-      <div className={styles["product-details"]}>
-        <div className="flex-column gap-20">
-          <p className={styles["product-details-title"]}>CRÉDITO CONSIGNADO</p>
-          <p className={styles["product-details-description"]}>
-            <p>
-              O crédito consignado é uma modalidade de empréstimo pessoal em que
-              as parcelas são descontadas automaticamente da folha de pagamento
-              ou do benefício do tomador. Por isso, ele costuma apresentar taxas
-              de juros menores que outros tipos de empréstimo, já que o risco de
-              inadimplência é consideravelmente mais baixo para as instituições
-              financeiras.
-            </p>
-            <ul>
-              <li>
-                <b>Como funciona</b>: O interessado solicita o crédito
-                consignado a um banco ou financeira. Uma vez aprovado, o valor é
-                liberado na conta do tomador. As parcelas mensais do empréstimo
-                são debitadas diretamente do salário, aposentadoria ou pensão,
-                antes mesmo do valor chegar à conta do cliente.
-              </li>
-              <li>
-                <b>Quem Pode Contratar</b>: Servidores públicos (municipais,
-                estaduais ou federais). Aposentados e pensionistas do INSS.
-                Trabalhadores de empresas privadas que possuem convênio com o
-                banco. Em alguns casos, militares também têm condições
-                específicas de contratação.
-              </li>
-              <li>
-                <b>Principais Características</b>: Desconto automático: Como o
-                pagamento é garantido diretamente na fonte (salário ou
-                benefício), as instituições oferecem juros mais baixos.
-              </li>
-              <li>
-                <b>Limite de margem consignável</b>: Existe um teto para o valor
-                da parcela mensal, chamado margem consignável. Em geral, ela é
-                de 30% a 35% da renda líquida do tomador, dependendo da
-                categoria (por exemplo, para aposentados do INSS, pode chegar a
-                35%, sendo 5% exclusivos para cartão consignado).
-              </li>
-              <li>
-                <b>Prazos longos</b>: Os prazos para pagamento podem chegar a 84
-                meses (7 anos), dependendo do perfil do contratante e da
-                instituição.
-              </li>{" "}
-              <li>
-                <b>Menos burocracia</b>: Em geral, a aprovação é mais rápida,
-                porque o risco para o banco é baixo.
-              </li>{" "}
-              <li>
-                <b>Vantagens do Crédito Consignado</b>: Juros baixos:
-                Normalmente, são as menores taxas do mercado para empréstimos
-                pessoais. Facilidade de aprovação: Mesmo quem tem restrições no
-                nome (negativado) pode conseguir o crédito. Organização
-                financeira: O desconto automático ajuda a manter o controle dos
-                pagamentos.
-              </li>{" "}
-              <li>
-                <b>Desvantagens e Riscos</b>: Comprometimento de renda: Uma
-                parcela fixa é descontada todo mês, reduzindo a margem de
-                manobra financeira. Endividamento: A facilidade de acesso pode
-                levar a contratações irresponsáveis. Dependência de emprego: No
-                caso de trabalhadores da iniciativa privada, a perda do emprego
-                pode gerar problemas para o pagamento do saldo devedor.
-                Renovação compulsiva: Muitas vezes, os tomadores renovam
-                empréstimos antes de terminar o contrato anterior, aumentando a
-                dívida.
-              </li>{" "}
-              <li>
-                <b>ATENÇÃO ESPECIAL</b>: Sempre verifique a taxa de juros anual
-                (CET – Custo Efetivo Total). Evite intermediários que cobram
-                taxas para "facilitar" o processo. Não aceite ofertas de crédito
-                sem analisar bem as condições.
-              </li>
-            </ul>
+    <i
+      onClick={() => setProductTab("")}
+      className={`${styles["i-return"]} flex-center i-p icon-arrow-left`}
+    ></i>
+    <div className={styles["product-details"]}>
+      <div className="flex-column gap-28">
+        <p className={styles["product-details-title"]}>
+          CARTÃO DE CRÉDITO CONSIGNADO
+        </p>
+        <div className={styles["product-details-description"]}>
+          <p>A liberdade do cartão de crédito com as vantagens do desconto direto em folha!</p>
+          <p>
+            O <strong>cartão de crédito consignado</strong> é uma opção prática e econômica para quem deseja fazer compras, sacar dinheiro ou ter um limite extra, com a segurança do desconto automático da fatura mínimo diretamente no salário ou benefício.
           </p>
+          <ol>
+            <li>
+              <h1>
+                <strong>Como funciona</strong>:
+              </h1>
+              <ul>
+                <li>
+                Você utiliza o cartão normalmente para compras em lojas físicas e online.
+                </li>
+                <li>
+                O valor mínimo da fatura é descontado automaticamente da sua folha de pagamento ou benefício.
+                </li>
+                <li>
+                O restante da fatura pode ser pago de forma opcional, diretamente pelo cliente.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h1>
+                <strong>Quem pode contratar?</strong>
+              </h1>{" "}
+              <ul>
+                <li>Aposentados e pensionistas do INSS.</li>
+                <li>
+                Servidores públicos federais, estaduais e municipais.
+                </li>
+                <li>Trabalhadores de empresas privadas conveniadas.</li>
+              </ul>
+            </li>
+            <li>
+              <h1>
+                <strong>Vantagens</strong>:
+              </h1>
+              <ul>
+                <li>
+                Sem consulta ao SPC/Serasa: mais facilidade de aprovação.
+                </li>
+                <li>
+                Taxas de juros reduzidas: muito menores do que as dos cartões tradicionais.
+                </li>
+                <li>
+                Sem anuidade: você não paga taxa para manter seu cartão ativo.
+                </li>
+                <li>
+                Saque em dinheiro: possibilidade de sacar parte do limite disponível.
+                </li>
+                <li>
+                Limite elevado: limites superiores aos oferecidos em cartões convencionais.
+                </li>
+                <li>
+                Uso nacional e internacional: faça compras no Brasil e no exterior com praticidade.
+                </li>
+              </ul>
+              <p>
+              Com o cartão de crédito consignado, você tem mais poder de compra, menos juros e toda a flexibilidade de um cartão tradicional, sem comprometer seu orçamento.
+              </p>
+            </li>
+          </ol>
         </div>
+        <button>Faça uma simulação</button>
       </div>
     </div>
+  </div>
   );
 }
 

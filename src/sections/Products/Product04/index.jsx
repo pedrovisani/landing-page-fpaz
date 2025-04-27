@@ -8,80 +8,111 @@ function Product04({ setProductTab }) {
         className={`${styles["i-return"]} flex-center i-p icon-arrow-left`}
       ></i>
       <div className={styles["product-details"]}>
-        <div className="flex-column gap-20">
-          <p className={styles["product-details-title"]}>CRÉDITO CONSIGNADO</p>
-          <p className={styles["product-details-description"]}>
+        <div className="flex-column gap-28">
+          <p className={styles["product-details-title"]}>FINANCIAMENTO DE VEÍCULOS IMÓVEIS E MAQUINÁRIO AGRÍCOLA</p>
+          <div className={styles["product-details-description"]}>
             <p>
-              O crédito consignado é uma modalidade de empréstimo pessoal em que
-              as parcelas são descontadas automaticamente da folha de pagamento
-              ou do benefício do tomador. Por isso, ele costuma apresentar taxas
-              de juros menores que outros tipos de empréstimo, já que o risco de
-              inadimplência é consideravelmente mais baixo para as instituições
-              financeiras.
+              Realize seus planos com o financiamento ideal para adquirir seu
+              veículo, imóvel ou maquinário agrícola, com condições flexíveis e
+              taxas competitivas!
             </p>
-            <ul>
+
+            <p>
+              O{" "}
+              <strong>
+                Financiamento de Veículos, Imóveis e Maquinário Agrícola
+              </strong>{" "}
+              oferece crédito para a aquisição de bens de alto valor, com prazos
+              alongados, parcelas que cabem no seu bolso e opções adaptadas ao
+              seu perfil e necessidade.
+            </p>
+
+            <ol>
               <li>
-                <b>Como funciona</b>: O interessado solicita o crédito
-                consignado a um banco ou financeira. Uma vez aprovado, o valor é
-                liberado na conta do tomador. As parcelas mensais do empréstimo
-                são debitadas diretamente do salário, aposentadoria ou pensão,
-                antes mesmo do valor chegar à conta do cliente.
+                <h1>
+                  <strong>Como funciona:</strong>
+                </h1>
+                <ul>
+                  <li>
+                    <strong>Financiamento de Veículos:</strong> Crédito para
+                    comprar carros, motos, caminhões ou outros veículos novos e
+                    usados, com entrada facilitada e diversas opções de
+                    parcelamento.
+                  </li>
+                  <li>
+                    <strong>Financiamento de Imóveis:</strong> Solução para
+                    aquisição de imóveis residenciais, comerciais ou terrenos,
+                    com prazos estendidos e condições atrativas.
+                  </li>
+                  <li>
+                    <strong>Financiamento de Maquinário Agrícola:</strong>{" "}
+                    Crédito voltado para produtores rurais que desejam investir
+                    em equipamentos agrícolas modernos e de alta produtividade.
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <b>Quem Pode Contratar</b>: Servidores públicos (municipais,
-                estaduais ou federais). Aposentados e pensionistas do INSS.
-                Trabalhadores de empresas privadas que possuem convênio com o
-                banco. Em alguns casos, militares também têm condições
-                específicas de contratação.
+                <h1>
+                  <strong>Vantagens:</strong>
+                </h1>
+                <ul>
+                  <li>
+                    <strong>Taxas competitivas:</strong> Juros acessíveis para
+                    viabilizar sua aquisição de forma planejada e econômica.
+                  </li>
+                  <li>
+                    <strong>Prazo flexível:</strong> Ampla variedade de prazos
+                    para pagamento, adaptados ao seu orçamento e tipo de
+                    financiamento.
+                  </li>
+                  <li>
+                    <strong>Entrada facilitada:</strong> Possibilidade de
+                    negociar condições de entrada que se ajustem ao seu momento
+                    financeiro.
+                  </li>
+                  <li>
+                    <strong>Atendimento especializado:</strong> Equipe preparada
+                    para orientar e ajudar a encontrar a melhor solução para seu
+                    projeto.
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <b>Principais Características</b>: Desconto automático: Como o
-                pagamento é garantido diretamente na fonte (salário ou
-                benefício), as instituições oferecem juros mais baixos.
+                <h1>
+                  <strong>Quem pode contratar:</strong>
+                </h1>
+                <ul>
+                  <li>
+                    <strong>Financiamento de Veículos:</strong> Pessoas físicas
+                    ou jurídicas que desejam adquirir veículos novos ou usados.
+                  </li>
+                  <li>
+                    <strong>Financiamento de Imóveis:</strong> Interessados na
+                    compra de imóveis residenciais, comerciais ou terrenos.
+                  </li>
+                  <li>
+                    <strong>Financiamento de Maquinário Agrícola:</strong>{" "}
+                    Produtores rurais que buscam modernizar sua produção com
+                    equipamentos agrícolas.
+                  </li>
+                </ul>
               </li>
-              <li>
-                <b>Limite de margem consignável</b>: Existe um teto para o valor
-                da parcela mensal, chamado margem consignável. Em geral, ela é
-                de 30% a 35% da renda líquida do tomador, dependendo da
-                categoria (por exemplo, para aposentados do INSS, pode chegar a
-                35%, sendo 5% exclusivos para cartão consignado).
-              </li>
-              <li>
-                <b>Prazos longos</b>: Os prazos para pagamento podem chegar a 84
-                meses (7 anos), dependendo do perfil do contratante e da
-                instituição.
-              </li>{" "}
-              <li>
-                <b>Menos burocracia</b>: Em geral, a aprovação é mais rápida,
-                porque o risco para o banco é baixo.
-              </li>{" "}
-              <li>
-                <b>Vantagens do Crédito Consignado</b>: Juros baixos:
-                Normalmente, são as menores taxas do mercado para empréstimos
-                pessoais. Facilidade de aprovação: Mesmo quem tem restrições no
-                nome (negativado) pode conseguir o crédito. Organização
-                financeira: O desconto automático ajuda a manter o controle dos
-                pagamentos.
-              </li>{" "}
-              <li>
-                <b>Desvantagens e Riscos</b>: Comprometimento de renda: Uma
-                parcela fixa é descontada todo mês, reduzindo a margem de
-                manobra financeira. Endividamento: A facilidade de acesso pode
-                levar a contratações irresponsáveis. Dependência de emprego: No
-                caso de trabalhadores da iniciativa privada, a perda do emprego
-                pode gerar problemas para o pagamento do saldo devedor.
-                Renovação compulsiva: Muitas vezes, os tomadores renovam
-                empréstimos antes de terminar o contrato anterior, aumentando a
-                dívida.
-              </li>{" "}
-              <li>
-                <b>ATENÇÃO ESPECIAL</b>: Sempre verifique a taxa de juros anual
-                (CET – Custo Efetivo Total). Evite intermediários que cobram
-                taxas para "facilitar" o processo. Não aceite ofertas de crédito
-                sem analisar bem as condições.
-              </li>
-            </ul>
-          </p>
+
+              <p>
+                O{" "}
+                <strong>
+                  Financiamento de Veículos, Imóveis e Maquinário Agrícola
+                </strong>{" "}
+                é a escolha certa para quem quer conquistar bens de grande valor
+                com condições acessíveis e prazos que respeitam seu planejamento
+                financeiro.
+              </p>
+            </ol>
+          </div>
+
+          <button>Faça sua simulação</button>
         </div>
       </div>
     </div>

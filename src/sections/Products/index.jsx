@@ -44,7 +44,9 @@ function Products() {
             <div className={styles["products-content"]}>
               <div className="flex-row gap-12">
                 <i className="icon-coin i-g color-yellow"></i>
-                <p className={styles["product-title"]}>ANTECIPAÇÃO DO SAQUE FGTS</p>
+                <p className={styles["product-title"]}>
+                  ANTECIPAÇÃO DO SAQUE FGTS
+                </p>
               </div>
               <p className={styles["product-description"]}>
                 Permite o saque do saldo do FGTS de forma ágil, com adesão 100%
@@ -61,11 +63,11 @@ function Products() {
                 <p className={styles["product-title"]}>FINANCIAMENTO</p>
               </div>
               <p className={styles["product-description"]}>
-                Destinado a aposentados e pensionistas do INSS e servidores
-                públicos. Funciona como um cartão de crédito normal, mas com a
-                vantagem de taxas de juros mais baixas e a facilidade do
-                desconto automático diretamente da folha de pagamento ou
-                benefício
+                Financiamento de veículos, imóveis e maquinário agrícola, para quem deseja 
+                realizar projetos de forma planejada, com taxas
+                competitivas, prazos flexíveis e condições que cabem no
+                bolso. Ideal para quem deseja conquistar o veículo ou o imóvel pŕoprio, ou
+                investir no crescimento do agronegócio.
               </p>
               <button onClick={() => setProductTab("product-04")}>
                 Saiba mais
