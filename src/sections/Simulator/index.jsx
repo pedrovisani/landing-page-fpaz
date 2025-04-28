@@ -1,10 +1,9 @@
-import styles from "./Simulator.module.css";
+import styles from './Simulator.module.css';
 
 function Simulator() {
   return (
     <section id="simulador" className="section main-bg">
-      <div class={`${styles['simulator-container']} wh-100`}>
-      </div>
+      <div class={`${styles['simulator-container']} wh-100`}></div>
     </section>
   );
 }
