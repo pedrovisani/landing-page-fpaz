@@ -1,6 +1,6 @@
 import Home from '../sections/Home';
 import Products from '../sections/Products';
-import Compromise from '../sections/Compromise';
+import Information from '../sections/Information';
 import Simulator from '../sections/Simulator';
 import Contact from '../sections/Contact';
 
@@ -9,7 +9,7 @@ function Junction() {
     <>
       <Home />
       <Products />
-      <Compromise />
+      <Information />
       <Simulator />
       <Contact />
     </>

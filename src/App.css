@@ -105,6 +105,9 @@
   color: green;
 }
 
+.w-fit {
+  width: fit-content;
+}
 .wh-100 {
   width: 100%;
   height: 100%;
@@ -139,6 +142,12 @@
 }
 .gap-28 {
   gap: 28px;
+}
+
+@media (max-width: 1100px) {
+  .section {
+    min-height: fit-content;
+  }
 }
 
 /*@media (prefers-reduced-motion: no-preference) {

@@ -1,6 +1,3 @@
-.w-20r {
-  width: 20rem;
-}
 .home-section {
   width: 100%;
   min-height: 84%;
@@ -8,18 +5,28 @@
 }
 
 .home-container {
+  border-radius: 12px;
+}
+.home-container img {
   background-image: url('../../assets/backgrounds/people-bg.svg');
   background-size: cover;
   background-position: center center;
-  opacity: 0.7;
-  padding: 24px 56px 24px 56px;
   border-radius: 12px;
-  animation: home-container-appear linear 800ms normal;
+  opacity: 0.7;
+  animation: img-container-appear linear 800ms normal;
+}
+
+.home-content {
+  position: absolute;
+  padding: 24px 56px 24px 56px;
+}
+.home-content div {
+  width: 20rem;
 }
 
 .home-title {
   color: var(--white);
-  font-weight: 300;
+  font-weight: 100;
   font-size: 3rem;
   width: fit-content;
   padding: 4px;
@@ -42,7 +49,7 @@
 
 .home-subtitle {
   color: var(--white);
-  font-weight: 400;
+  font-weight: 300;
   width: 20rem;
   font-size: 1.25rem;
   padding: 4px;
@@ -67,7 +74,7 @@
   }
 }
 
-@keyframes home-container-appear {
+@keyframes img-container-appear {
   0% {
     opacity: 0;
   }
@@ -95,7 +102,13 @@
 }
 
 @media (max-width: 800px) {
-  .home-container {
+  .home-title {
+    opacity: 0.9;
+  }
+  .home-subtitle {
+    opacity: 0.8;
+  }
+  .home-content {
     padding-left: 28px;
   }
 }

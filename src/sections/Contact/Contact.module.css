@@ -1,14 +1,16 @@
 .contact-container {
   background-color: rgba(247, 247, 247, 0.7);
-  padding: 24px 0 24px 0;
+  padding: 44px 0 44px 0;
   border-radius: 12px;
 }
 
 .contact-form {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
   width: 60%;
+  height: 100%;
 }
 .fields-form {
   display: flex;

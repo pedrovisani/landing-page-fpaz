@@ -55,8 +55,7 @@ function Products() {
               <p className={styles['product-description']}>
                 Financiamento de veículos, imóveis e maquinário agrícola, para quem deseja realizar
                 projetos de forma planejada, com taxas competitivas, prazos flexíveis e condições
-                que cabem no bolso. Ideal para quem deseja conquistar o veículo ou o imóvel pŕoprio,
-                ou investir no crescimento do agronegócio.
+                que cabem no bolso.
               </p>
               <button onClick={() => setProductTab('product-04')}>Saiba mais</button>
             </div>
@@ -77,9 +76,9 @@ function Products() {
                 <p className={styles['product-title']}>CARTÃO DE CRÉDITO CONSIGNADO</p>
               </div>
               <p className={styles['product-description']}>
-                Destinado a aposentados e pensionistas do INSS e servidores públicos. Funciona como
-                um cartão de crédito normal, mas com a vantagem de taxas de juros mais baixas e a
-                facilidade do desconto automático diretamente da folha de pagamento ou benefício
+                Destinado a aposentados, pensionistas e servidores públicos. Vantagem de taxas de
+                juros mais baixas e a facilidade do desconto automático diretamente da folha de
+                pagamento ou benefício
               </p>
               <button onClick={() => setProductTab('product-06')}>Saiba mais</button>
             </div>
