@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Junction from './junction';
+import Junction from './Junction';
 import Footer from './components/Footer';
 import './App.css';
 

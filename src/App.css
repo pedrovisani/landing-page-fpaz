@@ -9,16 +9,19 @@
 }
 
 .i-g {
+  text-align: center;
   width: 40px;
   height: 40px;
   font-size: 32px;
 }
 .i-m {
+  text-align: center;
   width: 32px;
   height: 32px;
   font-size: 24px;
 }
 .i-p {
+  text-align: center;
   width: 28px;
   height: 28px;
   font-size: 20px;

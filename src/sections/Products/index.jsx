@@ -14,7 +14,7 @@ function Products() {
     return (
       <section id="produtos" className="section main-bg">
         <div className={`${styles['products-container']} flex-center wh-100`}>
-          <div className={`${styles.products} wh-100 gap-20 pr`}>
+          <div className={`${styles['products']} wh-100 gap-20 pr`}>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
                 <i className="icon-coin i-g color-yellow"></i>
