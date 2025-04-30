@@ -5,7 +5,7 @@ import halfPartLogoTwo from '../../assets/frames/half-part-logo-two.svg';
 
 function Header() {
   return (
-    <aside id="inicio" className={`${styles.menu} flex-center-sp flex-row`}>
+    <aside id="inicio" className={`${styles['menu']} flex-center-sp flex-row`}>
       <div className={`flex-row`}>
         <Link to="/">
           <div className={`${styles['logo-svg']} flex-center`}>
@@ -24,7 +24,7 @@ function Header() {
         </div>
       </div>
 
-      <nav className="flex-center">
+      <nav className="nav flex-center">
         <menu className="flex-row gap-4">
           <Link to="/">
             <li className={styles['menu-btn']}>
