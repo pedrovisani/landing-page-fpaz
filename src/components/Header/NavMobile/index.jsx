@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './NavMobile.module.css';
+import styles from '../Header.module.css';
 
 function NavMobile({ showNavMobile, setShowNavMobile }) {
   if (showNavMobile == true) {
