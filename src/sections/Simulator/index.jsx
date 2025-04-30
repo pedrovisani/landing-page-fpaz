@@ -2,7 +2,7 @@ import styles from './Simulator.module.css';
 
 function Simulator() {
   return (
-    <section id="contato" className="section main-bg">
+    <section id="simulator" className="section main-bg">
       <div className={`${styles['simulator-container']} flex-center wh-100`}>
         <form className={styles['simulator-form']} netlify={'true' | 'false'}>
           <fieldset className={styles['fields-form']}>

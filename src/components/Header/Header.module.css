@@ -31,6 +31,15 @@
   border: 1px solid rgba(58, 77, 75, 0.1);
 }
 
+.nav-container {
+  display: block;
+}
+.nav-options-pc {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
 .logo-svg {
   position: relative;
   width: 4rem;
@@ -43,7 +52,7 @@
   display: flex;
   align-items: start;
   justify-content: center;
-  width: 16rem;
+  width: 15rem;
   height: 4rem;
 }
 .logo-name {
@@ -179,19 +188,5 @@
   100% {
     right: 4.378rem;
     opacity: 1;
-  }
-}
-
-@media (max-width: 800px) {
-  .nav {
-    content: "";
-    background-color: var(--color-primary-one);
-    font-size: 2rem;
-    line-height: 2rem;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 100%;
   }
 }

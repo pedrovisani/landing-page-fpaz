@@ -18,7 +18,7 @@
 
 .home-content {
   position: absolute;
-  padding: 24px 56px 24px 56px;
+  padding: 24px 0 24px 56px;
 }
 .home-content div {
   width: 20rem;

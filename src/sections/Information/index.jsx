@@ -15,7 +15,7 @@ function Information() {
           </div>
           <div className={`${styles['information-content']} flex-column`}>
             <div className="flex-row w-100 gap-4">
-              <i className="icon-user-tie i-p color-dark"></i>
+              <i className="icon-user-tie i-p"></i>
               <h1 className="w-fit">Consultoria online e personalizada</h1>
             </div>
             <h2>Equipe preparada para tirar todas as suas dúvidas, antes da contratação.</h2>
