@@ -214,7 +214,7 @@
   }
 }
 
-@media (max-height: 800px) {
+@media (max-width: 800px) {
   .nav-container::after {
     display: flex;
     align-items: center;
