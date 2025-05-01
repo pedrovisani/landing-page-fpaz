@@ -4,7 +4,7 @@ function Information() {
   return (
     <section className="section main-bg">
       <div className={`${styles['information-container']} flex-column wh-100`}>
-        <h1 className={styles['information-container-title']}>Compromisso com o nosso cliente</h1>
+        <h1 className={styles['information-container-title']}>COMPROMISSO COM O NOSSO CLIENTE</h1>
         <div className={styles['information']}>
           <div className={`${styles['information-content']} flex-column`}>
             <div className="flex-row w-100 gap-4">

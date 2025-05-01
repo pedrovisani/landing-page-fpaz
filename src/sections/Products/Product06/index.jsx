@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../Products.module.css';
 
 function Product06({ setProductTab }) {
@@ -69,7 +70,9 @@ function Product06({ setProductTab }) {
               </li>
             </ol>
           </div>
-          <button>Faça uma simulação</button>
+          <Link to="/simulador">
+            <button>Faça uma simulação</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../Products.module.css';
 
 function Product02({ setProductTab }) {
@@ -104,8 +105,9 @@ function Product02({ setProductTab }) {
               </p>
             </ol>
           </div>
-
-          <button>Faça sua simulação</button>
+          <Link to="/simulador">
+            <button>Faça uma simulação</button>
+          </Link>
         </div>
       </div>
     </div>

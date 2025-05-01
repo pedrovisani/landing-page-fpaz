@@ -122,7 +122,7 @@ function Simulator() {
               <label htmlFor="coin-cost">Taxa de juros vigente (%)</label>
               <input
                 className={styles['input-form']}
-                placeholder={`${!coinCost ? coinCost : '0.00'} (a.m.)`}
+                placeholder={`${coinCost} (a.m.)`}
                 name="coin-cost"
                 disabled
               />

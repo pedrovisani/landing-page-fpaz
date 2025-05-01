@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Product01 from './Product01';
 import Product02 from './Product02';
 import Product03 from './Product03';
@@ -23,7 +24,9 @@ function Products() {
               <p className={styles['product-description']}>
                 Crédito rápido e descomplicado, para aposentados, pensionistas e servidores públicos
               </p>
-              <button onClick={() => setProductTab('product-01')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-01')}>Saiba mais</button>
+              </Link>
             </div>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
@@ -34,7 +37,9 @@ function Products() {
                 Crédito com garantia de imóvel ou automóvel, ou crédito para correntistas de bancos
                 específicos
               </p>
-              <button onClick={() => setProductTab('product-02')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-02')}>Saiba mais</button>
+              </Link>
             </div>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
@@ -45,7 +50,9 @@ function Products() {
                 Permite o saque do saldo do FGTS de forma ágil, com adesão 100% online. Ou seja,
                 dinheiro rápido e sem comprometer a renda mensal
               </p>
-              <button onClick={() => setProductTab('product-03')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-03')}>Saiba mais</button>
+              </Link>
             </div>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
@@ -57,7 +64,9 @@ function Products() {
                 projetos de forma planejada, com taxas competitivas, prazos flexíveis e condições
                 que cabem no bolso.
               </p>
-              <button onClick={() => setProductTab('product-04')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-04')}>Saiba mais</button>
+              </Link>
             </div>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
@@ -68,7 +77,9 @@ function Products() {
                 Aquisição de bens como carros, imóveis ou serviços, sem juros, por meio de sorteios
                 ou lances em grupos. Também, é possível adquirir cotas contempladas
               </p>
-              <button onClick={() => setProductTab('product-05')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-05')}>Saiba mais</button>
+              </Link>
             </div>
             <div className={styles['products-content']}>
               <div className="flex-row gap-12">
@@ -80,7 +91,9 @@ function Products() {
                 juros mais baixas e a facilidade do desconto automático diretamente da folha de
                 pagamento ou benefício
               </p>
-              <button onClick={() => setProductTab('product-06')}>Saiba mais</button>
+              <Link to="/produtos">
+                <button onClick={() => setProductTab('product-06')}>Saiba mais</button>
+              </Link>
             </div>
           </div>
         </div>

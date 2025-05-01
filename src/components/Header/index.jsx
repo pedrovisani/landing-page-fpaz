@@ -10,6 +10,7 @@ function Header() {
 
   return (
     <>
+      <div className={styles['menu-spacing']}></div>
       <aside id="inicio" className={`${styles['menu']} flex-center-sp flex-row`}>
         <div className={`flex-row`}>
           <Link to="/">

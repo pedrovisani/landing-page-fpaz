@@ -42,6 +42,9 @@
 .products-content:nth-child(6) {
   animation: gentle-appear linear 1000ms normal;
 }
+.products-content button {
+  width: 100%;
+}
 
 .product-title {
   display: flex;
@@ -64,6 +67,7 @@
   padding: 64px 26px 24px 26px;
 }
 .product-details button {
+  width: 100%;
   font-weight: 600;
   background-color: var(--color-primary-two);
   border: 1px solid transparent;
@@ -169,9 +173,6 @@
   }
   .product-details-title {
     font-size: 1.2rem;
-  }
-  .product-details-description {
-    min-height: 112.5rem;
   }
 }
 
