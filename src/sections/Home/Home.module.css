@@ -56,6 +56,18 @@
   animation: smooth-appear linear 800ms normal;
 }
 
+@media (max-width: 800px) {
+  .home-title {
+    opacity: 0.9;
+  }
+  .home-subtitle {
+    opacity: 0.8;
+  }
+  .home-content {
+    padding-left: 28px;
+  }
+}
+
 @keyframes smooth-appear {
   0% {
     opacity: 0;
@@ -73,7 +85,6 @@
     opacity: 1;
   }
 }
-
 @keyframes img-container-appear {
   0% {
     opacity: 0;
@@ -91,24 +102,11 @@
     opacity: 0.7;
   }
 }
-
 @keyframes background-title-appear {
   from {
     transform: translateX(10vh);
   }
   to {
     transform: translateX(0);
-  }
-}
-
-@media (max-width: 800px) {
-  .home-title {
-    opacity: 0.9;
-  }
-  .home-subtitle {
-    opacity: 0.8;
-  }
-  .home-content {
-    padding-left: 28px;
   }
 }
