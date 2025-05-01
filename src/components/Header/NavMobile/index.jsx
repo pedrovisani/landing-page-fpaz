@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from '../Header.module.css';
 
 function NavMobile({ showNavMobile, setShowNavMobile }) {
-  if (showNavMobile == true) {
+  if (showNavMobile === true) {
     return (
       <div className={styles['nav-options-mobile']}>
         <div onClick={() => setShowNavMobile(false)} className={styles['close-nav-mobile']}></div>
