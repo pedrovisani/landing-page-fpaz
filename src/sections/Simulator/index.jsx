@@ -1,15 +1,32 @@
 import { useState } from 'react';
+import { clearFormat, coinFormat } from './monetaryFunctions.js';
 import styles from './Simulator.module.css';
 import SelectProduct from './SelectProduct';
 
 function Simulator() {
-  const [productName, setProductName] = useState('Escolha o produto');
+  const coinMonthlyCost = [0.018, 0.02, 0.04, 0.05, 0.0246];
+  const minPeriodPayment = [6, 7, 8, 9, 6];
+  const maxPeriodPayment = [96, 40, 40, 40, 72];
+
+  const [product, setProduct] = useState({ id: null, name: 'Escolha o produto' });
 
   const [simulatorData, setSimulatorData] = useState({
-    value: 0,
+    capital: 0,
     period: 0,
-    rate: 1.8,
   });
+
+  const [monthlyExpense, setMonthlyExpense] = useState('0,00');
+  const [totalServices, setTotalServices] = useState('0,00');
+  const [paidServices, setPaidServices] = useState('0,00');
+
+  const [simulationDetails, setSimulationDetails] = useState(false);
+
+  const coinCost = Number.isFinite(coinMonthlyCost[product.id])
+    ? (coinMonthlyCost[product.id] * 100).toFixed(2)
+    : '0.00';
+
+  const mPp = minPeriodPayment[product.id];
+  const mxPp = maxPeriodPayment[product.id];
 
   function handleChange(e) {
     setSimulatorData({ ...simulatorData, [e.target.name]: e.target.value });
@@ -18,57 +35,56 @@ function Simulator() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    let c = simulatorData.value;
-    const t = simulatorData.period;
-    const i = simulatorData.rate;
-    const l = [];
+    const c = clearFormat(simulatorData.capital);
+    const n = simulatorData.period;
 
-    while (l.length <= t) {
-      const M = c * (1 + i / 100);
-      l.push(M.toFixed(2));
-      c = M;
-    }
+    const p =
+      (c * coinMonthlyCost[product.id]) / (1 - Math.pow(1 + coinMonthlyCost[product.id], -n));
+    const t = p * n;
+    const tj = t - c;
 
-    // eslint-disable-next-line no-unused-vars
-    const mapa = l.map((item, index) => {
-      let indice = index + 1;
-      let nome = item;
-
-      return `${indice}º mês = ${nome}`;
-    });
+    setMonthlyExpense(coinFormat.format(p));
+    setTotalServices(coinFormat.format(t));
+    setPaidServices(coinFormat.format(tj));
+    setSimulationDetails(true);
   }
 
-  if (productName == 'Crédito consignado') {
+  if (!simulationDetails) {
     return (
       <section id="simulador" className="section main-bg">
         <div className={`${styles['simulator-container']} flex-center wh-100`}>
           <form onSubmit={handleSubmit} className={styles['simulator-form']}>
             <fieldset className={styles['fields-form']}>
               <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
-              <SelectProduct productName={productName} setProductName={setProductName} />
+              <SelectProduct product={product} setProduct={setProduct} />
+              <label htmlFor="capital">Valor desejado</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}
-                placeholder="Valor desejado: R$ 50.000"
+                placeholder="R$ 50.000"
                 type="text"
-                name="value"
+                name="capital"
+                required
               />
+              <label htmlFor="period">Prazo</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}
-                placeholder="Min: 6 meses Máx: 96 meses"
-                min="6"
-                max="96"
+                placeholder={`Min: ${mPp || 'X'} meses Máx: ${mxPp || 'X'} meses`}
+                min={`${mPp || 0}`}
+                max={`${mxPp || 0}`}
                 type="number"
                 name="period"
+                required
               />
+              <label htmlFor="coin-cost">Taxa de juros vigente (%)</label>
               <input
                 className={styles['input-form']}
-                placeholder="Taxa de juros vigente (a.a.): 24,60%"
-                name="juros"
+                placeholder={`${coinCost} (a.m.)`}
+                name="coin-cost"
+                type="text"
                 disabled
               />
-              <div className={styles['result']}></div>
             </fieldset>
             <button type="submit">Simular</button>
           </form>
@@ -79,25 +95,61 @@ function Simulator() {
     return (
       <section id="simulador" className="section main-bg">
         <div className={`${styles['simulator-container']} flex-center wh-100`}>
-          <form className={styles['simulator-form']}>
+          <form onSubmit={handleSubmit} className={styles['simulator-form']}>
             <fieldset className={styles['fields-form']}>
               <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
-              <SelectProduct productName={productName} setProductName={setProductName} />
+              <SelectProduct product={product} setProduct={setProduct} />
+              <label htmlFor="capital">Valor desejado</label>
               <input
+                onChange={handleChange}
                 className={styles['input-form']}
-                placeholder="Valor desejado"
+                placeholder="R$ 50.000"
                 type="text"
-                name="valor"
+                name="capital"
+                required
               />
+              <label htmlFor="period">Prazo</label>
+              <input
+                onChange={handleChange}
+                className={styles['input-form']}
+                placeholder={`Min: ${mPp} meses Máx: ${mxPp} meses`}
+                min={`${mPp || 0}`}
+                max={`${mxPp || 0}`}
+                type="number"
+                name="period"
+                required
+              />
+              <label htmlFor="coin-cost">Taxa de juros vigente (%)</label>
               <input
                 className={styles['input-form']}
-                placeholder="Min: 6 meses Máx: 96 meses"
-                min="6"
-                max="96"
-                type="number"
-                name="prazo"
+                placeholder={`${!coinCost ? coinCost : '0.00'} (a.m.)`}
+                name="coin-cost"
+                disabled
               />
-              <textarea className={styles['text-area-form']}></textarea>
+              <label htmlFor="installment">Parcela mensal (PRICE)</label>
+              <input
+                className={styles['input-form']}
+                value={monthlyExpense}
+                placeholder="Valor da parcela"
+                name="installment"
+                disabled
+              />
+              <label htmlFor="paid-total">Total com juros</label>
+              <input
+                className={styles['input-form']}
+                value={totalServices}
+                placeholder="Total com juros"
+                name="paid-total"
+                disabled
+              />
+              <label htmlFor="paid-service">Juros pagos</label>
+              <input
+                className={styles['input-form']}
+                value={paidServices}
+                placeholder="Juros pagos"
+                name="paid-service"
+                disabled
+              />
             </fieldset>
             <button type="submit">Simular</button>
           </form>

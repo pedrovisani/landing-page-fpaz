@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import styles from '../Simulator.module.css';
 
-function SelectProduct({ productName, setProductName }) {
+function SelectProduct({ product, setProduct }) {
   const [showTabProducts, setShowTabProducts] = useState(false);
 
   if (showTabProducts === false) {
     return (
       <div onClick={() => setShowTabProducts(true)} className="select-product">
         {' '}
-        <div className={styles['select-product-label']}>{productName}</div>
+        <div className={styles['select-product-label']}>{product.name}</div>
         <div className={`${styles['change-product']} flex-center icon-arrow-down`}></div>
       </div>
     );
@@ -16,13 +16,13 @@ function SelectProduct({ productName, setProductName }) {
     return (
       <div className="pr">
         <div onClick={() => setShowTabProducts(false)} className="select-product">
-          <div className={styles['select-product-label']}>{productName}</div>
+          <div className={styles['select-product-label']}>{product.name}</div>
           <div className={`${styles['change-product']} flex-center icon-arrow-up`}></div>
         </div>
         <div className={`${styles['list-product']} light-bg`}>
           <div
             onClick={() => {
-              setProductName('Crédito consignado');
+              setProduct({ id: 0, name: 'Crédito consignado' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
@@ -31,7 +31,7 @@ function SelectProduct({ productName, setProductName }) {
           </div>
           <div
             onClick={() => {
-              setProductName('Crédito com garantia de imóvel');
+              setProduct({ id: 1, name: 'Crédito com garantia de imóvel' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
@@ -40,7 +40,7 @@ function SelectProduct({ productName, setProductName }) {
           </div>
           <div
             onClick={() => {
-              setProductName('Crédito com garantia de automóvel');
+              setProduct({ id: 2, name: 'Crédito com garantia de automóvel' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
@@ -49,7 +49,7 @@ function SelectProduct({ productName, setProductName }) {
           </div>
           <div
             onClick={() => {
-              setProductName('Financiamento');
+              setProduct({ id: 3, name: 'Financiamento' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
@@ -58,7 +58,7 @@ function SelectProduct({ productName, setProductName }) {
           </div>
           <div
             onClick={() => {
-              setProductName('Cartão de crédito consignado');
+              setProduct({ id: 4, name: 'Cartão de crédito consignado' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
