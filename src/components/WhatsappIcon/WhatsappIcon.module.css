@@ -1,0 +1,26 @@
+.i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 3.5rem;
+  height: 3.5rem;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  color: var(--white);
+  border-radius: 100%;
+  background-color: #25d366;
+}
+
+.i:active {
+    animation: retreat linear 100ms normal;
+}
+
+@keyframes retreat {
+  from {
+    transform: translateZ(0) scale(1);
+  }
+  to {
+    transform: translateZ(-50px) scale(0.80);
+  }
+}

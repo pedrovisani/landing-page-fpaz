@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Junction from './components/Junction';
 import Footer from './components/Footer';
+import WhatsappIcon from './components/WhatsappIcon';
 import './App.css';
 
 function ScrollToSectionOnRouteChange() {
@@ -25,12 +26,13 @@ function ScrollToSectionOnRouteChange() {
 
 function App() {
   return (
-    <div className="wh-100 flex-column">
+    <div className="wh-100 flex-column pr">
       <Header />
       <Routes>
         <Route path="/*" element={<ScrollToSectionOnRouteChange />} />
       </Routes>
       <Footer />
+      <WhatsappIcon />
     </div>
   );
 }

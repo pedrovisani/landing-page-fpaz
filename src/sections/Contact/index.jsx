@@ -4,7 +4,6 @@ function Contact() {
   return (
     <section id="contato" className="section main-bg">
       <div className={`${styles['contact-container']} flex-center wh-100`}>
-        <input type="hidden" name="contact" value="contact" />
         <form name="contact" className={styles['contact-form']} data-netlify="true">
           <fieldset className={styles['fields-form']}>
             <legend className={styles['legend-form']}>ENTRE EM CONTATO CONOSCO</legend>
@@ -14,6 +13,7 @@ function Contact() {
               placeholder="Fernando Carvalho"
               type="text"
               name="nome"
+              required
             />
             <label htmlFor="email">E-mail</label>
             <input
@@ -21,6 +21,7 @@ function Contact() {
               placeholder="email@email.com"
               type="email"
               name="email"
+              required
             />
             <label htmlFor="celular">Celular</label>
             <input
@@ -28,12 +29,14 @@ function Contact() {
               placeholder="(XX) XXXXX-XXXX"
               type="tel"
               name="celular"
+              required
             />
             <label htmlFor="solicitacao">Escreva no campo abaixo</label>
             <textarea
               className={styles['text-area-form']}
               placeholder="Olá! Gostaria de simular a contratação de um financiamento!"
               name="solicitacao"
+              required
             ></textarea>
           </fieldset>
           <button type="submit">Enviar</button>

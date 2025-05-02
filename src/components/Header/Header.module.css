@@ -14,7 +14,7 @@
   width: 100%;
   min-height: 16%;
   padding: 0 1rem 0 1rem;
-  background-color: rgba(247, 247, 247, 0.7);
+  background-color: rgba(247, 247, 247, 0.6);
 }
 .menu-spacing {
   width: 100%;
@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 2.1rem;
+  top: 1.864rem;
   right: 1rem;
   content: 'X';
   width: 2.4rem;
