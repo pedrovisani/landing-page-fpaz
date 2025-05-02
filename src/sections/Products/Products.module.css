@@ -80,6 +80,20 @@
   background-color: transparent;
   border-color: var(--color-primary-two);
 }
+.product-details button:has(i) {
+  width: 100%;
+  font-weight: 600;
+  background-color: var(--color-primary-one);
+  border: 1px solid transparent;
+  animation: gentle-appear linear 700ms normal;
+}
+.product-details button:has(i):hover {
+  background-color: rgba(58, 77, 75, 0.8);
+}
+.product-details button:has(i):active {
+  background-color: transparent;
+  border-color: rgba(58, 77, 75, 0.8);
+}
 .product-details-title {
   color: var(--font-dark);
   font-weight: 200;
