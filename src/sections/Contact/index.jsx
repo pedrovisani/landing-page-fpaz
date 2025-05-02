@@ -4,6 +4,7 @@ function Contact() {
   return (
     <section id="contato" className="section main-bg">
       <div className={`${styles['contact-container']} flex-center wh-100`}>
+        <input type="hidden" name="contact" value="contact" />
         <form name="contact" className={styles['contact-form']} data-netlify="true">
           <fieldset className={styles['fields-form']}>
             <legend className={styles['legend-form']}>ENTRE EM CONTATO CONOSCO</legend>
