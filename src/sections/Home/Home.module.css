@@ -68,23 +68,6 @@
   .home-content {
     padding-left: 28px;
   }
-  @media (max-height: 800px) {
-    .home-content {
-      gap: 16px;
-    }
-    .home-title {
-      opacity: 0.9;
-      font-size: 1.5rem;
-      font-weight: 200;
-    }
-    .home-subtitle {
-      opacity: 0.8;
-      font-size: 0.8rem;
-    }
-    .home-content {
-      padding-left: 28px;
-    }
-  }
 }
 
 @keyframes smooth-appear {
