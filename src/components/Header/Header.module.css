@@ -176,6 +176,11 @@
     font-size: 1.2rem;
   }
 }
+@media (max-height: 400px) {
+  .menu-spacing {
+    min-height: 17%;
+  }
+}
 
 @keyframes top-appear {
   0% {

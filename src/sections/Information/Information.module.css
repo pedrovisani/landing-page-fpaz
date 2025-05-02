@@ -1,7 +1,8 @@
 .information-container {
   display: flex;
+  justify-content: space-between;
   background-color: rgba(247, 247, 247, 0.7);
-  padding: 24px 32px 24px 32px;
+  padding: 5.5rem 32px 5.5rem 32px;
   border-radius: 12px;
 }
 .information-container-title {
@@ -119,14 +120,12 @@
   .information-content h2 {
     font-size: 0.8rem;
   }
-  .information-container-title {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 800px) {
   .information-container {
     padding-left: 28px;
     padding-right: 28px;
+  }
+  .information-container-title {
+    font-size: 1.4rem;
   }
 }
 

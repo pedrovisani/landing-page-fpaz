@@ -5,8 +5,9 @@ import SelectProduct from './SelectProduct';
 
 function Simulator() {
   const coinMonthlyCost = [0.018, 0.02, 0.04, 0.05, 0.0246];
-  const minPeriodPayment = [6, 7, 8, 9, 6];
-  const maxPeriodPayment = [96, 40, 40, 40, 72];
+  const capitalExample = ['50.000', '100.000', '30.000', '0.00', '8.000'];
+  const minPeriodPayment = [6, 30, 30, 9, 6];
+  const maxPeriodPayment = [96, 180, 180, 40, 72];
 
   const [product, setProduct] = useState({ id: null, name: 'Escolha o produto' });
 
@@ -57,16 +58,16 @@ function Simulator() {
             <fieldset className={styles['fields-form']}>
               <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
               <SelectProduct product={product} setProduct={setProduct} />
-              <label htmlFor="capital">Valor desejado</label>
+              <label htmlFor="capital">Valor desejado (R$)</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}
-                placeholder="R$ 50.000"
+                placeholder={`Ex: ${capitalExample[product.id] || '10.000'}`}
                 type="text"
                 name="capital"
                 required
               />
-              <label htmlFor="period">Prazo</label>
+              <label htmlFor="period">Prazo (Meses)</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}
@@ -99,16 +100,16 @@ function Simulator() {
             <fieldset className={styles['fields-form']}>
               <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
               <SelectProduct product={product} setProduct={setProduct} />
-              <label htmlFor="capital">Valor desejado</label>
+              <label htmlFor="capital">Valor desejado (R$)</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}
-                placeholder="R$ 50.000"
+                placeholder={`R$ ${capitalExample[product.id]}`}
                 type="text"
                 name="capital"
                 required
               />
-              <label htmlFor="period">Prazo</label>
+              <label htmlFor="period">Prazo (Meses)</label>
               <input
                 onChange={handleChange}
                 className={styles['input-form']}

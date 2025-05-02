@@ -75,7 +75,7 @@ function Products() {
               </div>
               <p className={styles['product-description']}>
                 Aquisição de bens como carros, imóveis ou serviços, sem juros, por meio de sorteios
-                ou lances em grupos. Também, é possível adquirir cotas contempladas
+                ou lances em grupos. Também, é possível negociar cotas com acréscimo de ágio.
               </p>
               <Link to="/produtos">
                 <button onClick={() => setProductTab('product-05')}>Saiba mais</button>

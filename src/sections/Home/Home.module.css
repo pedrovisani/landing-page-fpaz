@@ -66,6 +66,23 @@
     opacity: 0.8;
   }
   .home-content {
+    gap: 16px;
+    padding-left: 28px;
+  }
+}
+@media (max-height: 400px) {
+  .home-title {
+    opacity: 0.9;
+    font-size: 1.8rem;
+    font-weight: 200;
+  }
+  .home-subtitle {
+    opacity: 0.8;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .home-content {
+    gap: 4px;
     padding-left: 28px;
   }
 }
