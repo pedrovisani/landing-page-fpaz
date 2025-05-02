@@ -7,7 +7,7 @@ function Home() {
         <div className="wh-100 pr">
           <img className="wh-100 pa" />
         </div>
-        <div className={`${styles['home-content']} flex-center-start flex-column h-100 gap-24`}>
+        <div className={`${styles['home-content']} flex-center-start flex-column h-100`}>
           <div>
             <p className={styles['home-title']}>Crédito</p>
             <p className={styles['home-title']}>confiável para</p>
