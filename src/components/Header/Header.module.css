@@ -176,10 +176,10 @@
     font-size: 1.2rem;
   }
   .menu-spacing {
-    min-height: 6.5rem;
+    min-height: 7rem;
   }
   .menu {
-    min-height: 6.5rem;
+    min-height: 7rem;
   }
 }
 @media (max-height: 400px) {
