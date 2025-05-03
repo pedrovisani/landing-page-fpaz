@@ -4,9 +4,12 @@ function Contact() {
   return (
     <section id="contato" className="section main-bg">
       <div className={`${styles['contact-container']} flex-center wh-100`}>
-        <form name="contact" className={styles['contact-form']} method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true" className={styles['contact-form']}>
+          <input type="hidden" name="form-name" value="contact" />
+
           <fieldset className={styles['fields-form']}>
             <legend className={styles['legend-form']}>ENTRE EM CONTATO CONOSCO</legend>
+
             <label htmlFor="nome">Nome</label>
             <input
               className={styles['input-form']}
@@ -15,6 +18,7 @@ function Contact() {
               name="nome"
               required
             />
+
             <label htmlFor="email">E-mail</label>
             <input
               className={styles['input-form']}
@@ -23,6 +27,7 @@ function Contact() {
               name="email"
               required
             />
+
             <label htmlFor="celular">Celular</label>
             <input
               className={styles['input-form']}
@@ -31,6 +36,7 @@ function Contact() {
               name="celular"
               required
             />
+
             <label htmlFor="solicitacao">Escreva no campo abaixo</label>
             <textarea
               className={styles['text-area-form']}
@@ -39,6 +45,7 @@ function Contact() {
               required
             ></textarea>
           </fieldset>
+
           <button type="submit">Enviar</button>
         </form>
       </div>
