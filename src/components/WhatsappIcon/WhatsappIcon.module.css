@@ -13,7 +13,7 @@
 }
 
 .i:active {
-    animation: retreat linear 100ms normal;
+  animation: retreat linear 100ms normal;
 }
 
 @keyframes retreat {
@@ -21,6 +21,6 @@
     transform: translateZ(0) scale(1);
   }
   to {
-    transform: translateZ(-50px) scale(0.80);
+    transform: translateZ(-50px) scale(0.8);
   }
 }
