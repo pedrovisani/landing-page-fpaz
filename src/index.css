@@ -125,6 +125,7 @@ button {
   font-family: inherit;
   background-color: rgb(58, 77, 75);
   cursor: pointer;
+  color: var(--white);
 }
 button:hover {
   background-color: rgba(58, 77, 75, 0.8);
