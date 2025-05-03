@@ -70,10 +70,10 @@
     padding-left: 28px;
   }
 }
-@media (max-height: 800px) {
+@media (max-height: 400px) {
   .home-title {
     opacity: 0.9;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 200;
   }
   .home-subtitle {
