@@ -11,6 +11,7 @@ function ScrollToSectionOnRouteChange() {
 
   useEffect(() => {
     const sectionId = location.pathname.replace('/', '');
+    console.log(sectionId);
     if (sectionId) {
       const section = document.getElementById(sectionId);
       if (section) {
@@ -18,6 +19,29 @@ function ScrollToSectionOnRouteChange() {
       }
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const productContent = document.querySelectorAll('.products-content');
+    const informationContent = document.querySelectorAll('.information-content');
+
+    if (sectionId === 'produtos') {
+      productContent.forEach((el) => {
+        el.classList.add('z-appear');
+      });
+    } else {
+      productContent.forEach((el) => {
+        el.classList.remove('z-appear');
+      });
+    }
+
+    if (sectionId === 'sobre') {
+      informationContent.forEach((el) => {
+        el.classList.add('z-appear');
+      });
+    } else {
+      informationContent.forEach((el) => {
+        el.classList.remove('z-appear');
+      });
     }
   }, [location]);
 

@@ -16,7 +16,7 @@ function Products() {
       <section id="produtos" className="section main-bg">
         <div className={`${styles['products-container']} flex-center wh-100`}>
           <div className={`${styles['products']} wh-100 gap-20 pr`}>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-coin i-g color-yellow"></i>
                 <p className={styles['product-title']}>CRÉDITO CONSIGNADO</p>
@@ -28,7 +28,7 @@ function Products() {
                 <button onClick={() => setProductTab('product-01')}>Saiba mais</button>
               </Link>
             </div>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-coin i-g color-yellow"></i>
                 <p className={styles['product-title']}>CRÉDITO PESSOAL</p>
@@ -41,7 +41,7 @@ function Products() {
                 <button onClick={() => setProductTab('product-02')}>Saiba mais</button>
               </Link>
             </div>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-coin i-g color-yellow"></i>
                 <p className={styles['product-title']}>ANTECIPAÇÃO DO SAQUE FGTS</p>
@@ -54,7 +54,7 @@ function Products() {
                 <button onClick={() => setProductTab('product-03')}>Saiba mais</button>
               </Link>
             </div>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-office i-g color-gray"></i>
                 <p className={styles['product-title']}>FINANCIAMENTO</p>
@@ -68,7 +68,7 @@ function Products() {
                 <button onClick={() => setProductTab('product-04')}>Saiba mais</button>
               </Link>
             </div>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-profile i-g color-dark"></i>
                 <p className={styles['product-title']}>CONSÓRCIOS</p>
@@ -81,7 +81,7 @@ function Products() {
                 <button onClick={() => setProductTab('product-05')}>Saiba mais</button>
               </Link>
             </div>
-            <div className={styles['products-content']}>
+            <div className="products-content">
               <div className="flex-row gap-12">
                 <i className="icon-card i-g color-green"></i>
                 <p className={styles['product-title']}>CARTÃO DE CRÉDITO CONSIGNADO</p>

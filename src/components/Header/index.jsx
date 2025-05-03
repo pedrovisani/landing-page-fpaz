@@ -42,6 +42,11 @@ function Header() {
                 <p>Produtos</p>
               </li>
             </Link>
+            <Link to="/sobre">
+              <li className={styles['menu-btn']}>
+                <p>Sobre nós</p>
+              </li>
+            </Link>
             <Link to="/simulador">
               <li className={styles['menu-btn']}>
                 <p>Simulador</p>

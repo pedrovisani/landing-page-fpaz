@@ -2,25 +2,25 @@ import styles from './Information.module.css';
 
 function Information() {
   return (
-    <section className="section main-bg">
+    <section id="sobre" className="section main-bg">
       <div className={`${styles['information-container']} flex-column wh-100`}>
         <h1 className={styles['information-container-title']}>COMPROMISSO COM O NOSSO CLIENTE</h1>
         <div className={styles['information']}>
-          <div className={`${styles['information-content']} flex-column`}>
+          <div className="information-content flex-column">
             <div className="flex-row w-100 gap-4">
               <i className="icon-checkmark i-p color-green"></i>
               <h1 className="w-fit">Crédito fácil</h1>
             </div>
             <h2>Atendimento objetivo e com linguagem simples dos nossos consultores.</h2>
           </div>
-          <div className={`${styles['information-content']} flex-column`}>
+          <div className="information-content flex-column">
             <div className="flex-row w-100 gap-4">
               <i className="icon-user-tie i-p"></i>
               <h1 className="w-fit">Consultoria online e personalizada</h1>
             </div>
             <h2>Equipe preparada para tirar todas as suas dúvidas, antes da contratação.</h2>
           </div>
-          <div className={`${styles['information-content']} flex-column`}>
+          <div className="information-content flex-column">
             <div className="flex-row w-100 gap-4">
               <i className="icon-spinner i-p color-yellow"></i>
               <h1 className="w-fit">Liberação rápida</h1>
