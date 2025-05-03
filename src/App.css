@@ -153,22 +153,22 @@
 }
 
 .z-appear:nth-child(1) {
-  animation: zig-zag-z linear 500ms normal;
+  animation: zig-zag-z 500ms linear 500ms normal;
 }
 .z-appear:nth-child(2) {
-  animation: zig-zag-z linear 700ms normal;
+  animation: zig-zag-z 700ms linear 500ms normal;
 }
 .z-appear:nth-child(3) {
-  animation: zig-zag-z linear 900ms normal;
+  animation: zig-zag-z 900ms linear 500ms normal;
 }
 .z-appear:nth-child(4) {
-  animation: zig-zag-z linear 1100ms normal;
+  animation: zig-zag-z 1100ms linear 500ms normal;
 }
 .z-appear:nth-child(5) {
-  animation: zig-zag-z linear 1300ms normal;
+  animation: zig-zag-z 1300ms linear 500ms normal;
 }
 .z-appear:nth-child(6) {
-  animation: zig-zag-z linear 1500ms normal;
+  animation: zig-zag-z 1500ms linear 500ms normal;
 }
 
 @keyframes zig-zag-z {
