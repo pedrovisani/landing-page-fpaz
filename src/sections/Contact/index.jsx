@@ -2,7 +2,7 @@ import styles from './Contact.module.css';
 
 function Contact() {
   return (
-    <section id="contact" className="section main-bg">
+    <section id="contato" className="section main-bg">
       <div className={`${styles['contact-container']} flex-center wh-100`}>
         <form name="contact" className={styles['contact-form']} method="POST" data-netlify="true">
           <fieldset className={styles['fields-form']}>
