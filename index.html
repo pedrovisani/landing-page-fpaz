@@ -8,25 +8,14 @@
     <title>FPAZ Serviços Financeiros</title>
   </head>
   <body>
-    <div id="root"></div>
-    <form name="contact" method="POST" data-netlify="true" hidden>
-      <fieldset>
-        <legend>ENTRE EM CONTATO CONOSCO</legend>
-        <label for="nome">Nome</label>
-        <input placeholder="Fernando Carvalho" type="text" name="nome" required />
-        <label for="email">E-mail</label>
-        <input placeholder="email@email.com" type="email" name="email" required />
-        <label for="celular">Celular</label>
-        <input placeholder="(XX) XXXXX-XXXX" type="tel" name="celular" required />
-        <label for="solicitacao">Escreva no campo abaixo</label>
-        <textarea
-          placeholder="Olá! Gostaria de simular a contratação de um financiamento!"
-          name="solicitacao"
-          required
-        ></textarea>
-      </fieldset>
-      <button type="submit">Enviar</button>
+    <form name="contact" method="POST" netlify hidden>
+      <input type="text" name="nome" required />
+      <input type="email" name="email" required />
+      <input type="tel" name="celular" required />
+      <textarea name="solicitacao" required></textarea>
     </form>
+
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
