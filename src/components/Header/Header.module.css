@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 2.7rem;
+  top: 1.2rem;
   right: 1rem;
   content: 'X';
   width: 2.4rem;
@@ -123,12 +123,29 @@
 }
 
 @media (max-width: 800px) {
+  .logo-name {
+    font-size: 2.2rem !important;
+  }
+  .logo-description {
+    font-size: 0.56rem !important;
+  }
+  .half-part-logo-one {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .half-part-logo-two {
+    bottom: 0.5rem;
+    left: 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation: bottom-appear-mobile linear 800ms normal;
+  }
   .nav-container::after {
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 2.7rem;
+    top: 1.2rem;
     right: 1rem;
     content: '≡';
     width: 2.4rem;
@@ -176,10 +193,10 @@
     font-size: 1.2rem;
   }
   .menu-spacing {
-    min-height: 7rem;
+    min-height: 5rem;
   }
   .menu {
-    min-height: 7rem;
+    min-height: 5rem;
   }
 }
 @media (max-height: 400px) {
@@ -242,6 +259,33 @@
   100% {
     bottom: 0.2rem;
     left: 0.4rem;
+    opacity: 1;
+  }
+}
+@keyframes bottom-appear-mobile {
+  0% {
+    bottom: 0rem;
+    left: 0rem;
+    opacity: 0;
+  }
+  25% {
+    bottom: 0.15rem;
+    left: 0.15rem;
+    opacity: 0.25;
+  }
+  50% {
+    bottom: 0.3rem;
+    left: 0.3rem;
+    opacity: 0.3;
+  }
+  75% {
+    bottom: 0.45rem;
+    left: 0.45rem;
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 0.5rem;
+    left: 0.6rem;
     opacity: 1;
   }
 }
