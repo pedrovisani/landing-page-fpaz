@@ -4,6 +4,7 @@
   background-color: rgba(247, 247, 247, 0.7);
   padding: 5.5rem 32px 5.5rem 32px;
   border-radius: 12px;
+  gap: 16px;
 }
 .information-container-title {
   padding: 0 0 2rem 0;
