@@ -23,24 +23,31 @@ function ScrollToSectionOnRouteChange() {
 
     const productContent = document.querySelectorAll('.products-content');
     const informationContent = document.querySelectorAll('.information-content');
+    const stepsContent = document.querySelectorAll('.steps-content');
 
     if (sectionId === 'produtos') {
       productContent.forEach((el) => {
-        el.classList.add('z-appear');
+        el.classList.add('x-appear');
       });
     } else {
       productContent.forEach((el) => {
-        el.classList.remove('z-appear');
+        el.classList.remove('x-appear');
       });
     }
 
     if (sectionId === 'sobre') {
       informationContent.forEach((el) => {
-        el.classList.add('z-appear');
+        el.classList.add('x-appear');
+      });
+      stepsContent.forEach((el) => {
+        el.classList.add('x-appear');
       });
     } else {
       informationContent.forEach((el) => {
-        el.classList.remove('z-appear');
+        el.classList.remove('x-appear');
+      });
+      stepsContent.forEach((el) => {
+        el.classList.remove('x-appear');
       });
     }
   }, [location]);
