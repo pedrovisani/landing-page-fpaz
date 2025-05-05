@@ -12,13 +12,13 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  min-height: 16%;
+  min-height: 12%;
   padding: 0 1rem 0 1rem;
   background-color: rgba(247, 247, 247, 0.6);
 }
 .menu-spacing {
   width: 100%;
-  min-height: 16%;
+  min-height: 12%;
   background-color: var(--color-secondary);
 }
 .menu-btn {
