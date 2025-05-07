@@ -35,13 +35,14 @@
   color: var(--text-light);
 }
 :global(.information-content) h1 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 :global(.information-content) h1::first-letter {
   font-size: 1.6rem;
 }
 :global(.information-content) h2 {
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .steps h1 {
@@ -69,10 +70,11 @@
 }
 :global(.steps-content) h1 {
   padding: 0 0 12px 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 :global(.steps-content) h2 {
   font-size: 0.8rem;
+  font-weight: 400;
 }
 :global(.steps-content):nth-child(2n) {
   background-color: rgba(58, 77, 75, 0.9);
@@ -85,12 +87,6 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, 10rem);
   }
-  :global(.information-content) h1 {
-    font-size: 1.1rem;
-  }
-  :global(.information-content) h2 {
-    font-size: 0.9rem;
-  }
 }
 @media (max-width: 800px) {
   .steps-container {
@@ -98,21 +94,11 @@
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, 10rem);
   }
-  :global(.steps-content) h1 {
-    padding: 0 0 12px 0;
-    font-size: 1.2rem;
-  }
   :global(.steps-content) h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   :global(.information-content) {
     height: 8rem;
-  }
-  :global(.information-content) h1 {
-    font-size: 1.2rem;
-  }
-  :global(.information-content) h2 {
-    font-size: 0.8rem;
   }
   .information-container {
     padding-left: 28px;

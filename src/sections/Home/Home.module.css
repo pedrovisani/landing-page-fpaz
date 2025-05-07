@@ -27,10 +27,10 @@
 
 .home-title {
   color: var(--white);
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3rem;
   width: fit-content;
-  padding: 4px;
+  padding-top: 2px;
 }
 .home-title:nth-child(1) {
   animation: background-title-appear linear 240ms normal;
@@ -60,10 +60,11 @@
 @media (max-width: 800px) {
   .home-title {
     opacity: 0.9;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    padding-top: 12px;
   }
   .home-subtitle {
-    opacity: 0.8;
+    font-size: 1.1rem;
   }
   .home-content {
     gap: 16px;
@@ -72,14 +73,10 @@
 }
 @media (max-height: 400px) {
   .home-title {
-    opacity: 0.9;
     font-size: 1.4rem;
-    font-weight: 200;
   }
   .home-subtitle {
-    opacity: 0.8;
     font-size: 0.7rem;
-    font-weight: 400;
   }
   .home-content {
     gap: 4px;

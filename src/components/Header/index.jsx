@@ -22,10 +22,10 @@ function Header() {
 
           <div className={`${styles['logo-name-container']} flex-column pr`}>
             <div className={`${styles['title-content']} pr`}>
-              <h1 className={styles['logo-name']}>FPAZ</h1>
+              <h1 className={styles['logo-name']}></h1>
             </div>
             <div className={`${styles['subtitle-content']} pr`}>
-              <h3 className={styles['logo-description']}>CONSÓRCIOS E SERVIÇOS FINANCEIROS</h3>
+              <h3 className={styles['logo-description']}>SERVIÇOS FINANCEIROS</h3>
             </div>
           </div>
         </div>
