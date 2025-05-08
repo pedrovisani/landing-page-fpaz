@@ -22,48 +22,21 @@ function SelectProduct({ product, setProduct }) {
         <div className={`${styles['list-product']} light-bg`}>
           <div
             onClick={() => {
-              setProduct({ id: 0, name: 'Crédito consignado' });
+              setProduct({ id: 0, name: 'Consórcio de imóvel' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
           >
-            Crédito consignado
+            Consórcio de imóvel
           </div>
           <div
             onClick={() => {
-              setProduct({ id: 1, name: 'Crédito com garantia de imóvel' });
+              setProduct({ id: 1, name: 'Consórcio de automóvel' });
               setShowTabProducts(false);
             }}
             className={styles['item']}
           >
-            Crédito com garantia de imóvel
-          </div>
-          <div
-            onClick={() => {
-              setProduct({ id: 2, name: 'Crédito com garantia de automóvel' });
-              setShowTabProducts(false);
-            }}
-            className={styles['item']}
-          >
-            Crédito com garantia de automóvel
-          </div>
-          <div
-            onClick={() => {
-              setProduct({ id: 3, name: 'Financiamento' });
-              setShowTabProducts(false);
-            }}
-            className={styles['item']}
-          >
-            Financiamento
-          </div>
-          <div
-            onClick={() => {
-              setProduct({ id: 4, name: 'Cartão de crédito consignado' });
-              setShowTabProducts(false);
-            }}
-            className={styles['item']}
-          >
-            Cartão de crédito consignado
+            Consórcio de automóvel
           </div>
         </div>
       </div>

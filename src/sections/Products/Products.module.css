@@ -1,6 +1,6 @@
 .products-container {
   background-color: rgba(247, 247, 247, 0.7);
-  padding: 56px 32px 56px 32px;
+  padding: 56px;
   border-radius: 12px;
 }
 
@@ -82,7 +82,7 @@
   font-weight: 200;
   font-size: 2rem;
   width: fit-content;
-  height: 2rem;
+  height: fit-content;
   animation: gentle-appear linear 700ms normal;
 }
 .product-details-description {
@@ -139,19 +139,24 @@
   }
   .product-details-title {
     font-size: 1.4rem;
+    font-weight: 400;
   }
 }
 @media (max-width: 800px) {
+  .products-container {
+    padding: 56px 28px 56px 28px;
+  }
   .products {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, auto);
   }
   .product-details div {
-    gap: 56px;
+    gap: 28px;
   }
   .product-details-title {
     font-size: 1.2rem;
+    font-weight: 400;
   }
 }
 

@@ -69,9 +69,15 @@ function Product01({ setProductTab }) {
               </li>
             </ol>
           </div>
-          <Link to="/simulador">
-            <button>Faça uma simulação</button>
-          </Link>
+          <button
+            onClick={() => {
+              window.open('https://wa.me/5581991167312', '_blank', 'noopener,noreferrer');
+            }}
+            className="flex-center flex-row gap-8"
+          >
+            <h1>Fale com um consultor</h1>
+            <i className="icon-wpp h-100"></i>
+          </button>
         </div>
       </div>
     </div>
