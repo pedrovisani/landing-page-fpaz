@@ -188,7 +188,7 @@
   }
 }
 
-@media (max-height: 300px) {
+@media (max-height: 400px) {
    .menu-spacing {
     min-height: 5.5rem;
   }
