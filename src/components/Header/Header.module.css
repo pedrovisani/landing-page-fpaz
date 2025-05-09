@@ -187,14 +187,6 @@
     min-height: 5rem;
   }
 }
-@media (max-height: 400px) {
-  .menu-spacing {
-    min-height: 6.5rem;
-  }
-  .menu {
-    min-height: 6.5rem;
-  }
-}
 
 @keyframes top-appear {
   0% {
