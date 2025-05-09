@@ -30,7 +30,7 @@
   justify-content: center;
   width: 13rem;
   height: 13rem;
-  background-color: rgba(247, 247, 247, 0.9);
+  background-color: var(--white);
   border-radius: 100%;
   padding: 12px;
 }
@@ -73,13 +73,13 @@
     transform: scale(1) translateZ(0) translateX(0);
   }
   25% {
-    transform: scale(1.2) translateZ(10px) translateX(-200px);
+    transform: scale(1.2) translateZ(10px) translateX(-150px);
   }
   50% {
     transform: scale(1) translateZ(0) translateX(0);
   }
   75% {
-    transform: scale(1.2) translateZ(10px) translateX(200px);
+    transform: scale(1.2) translateZ(10px) translateX(150px);
   }
   100% {
     transform: scale(1) translateZ(0) translateX(0);
@@ -90,13 +90,13 @@
     transform: scale(1) translateZ(0) translateX(0);
   }
   25% {
-    transform: scale(1.2) translateZ(10px) translateX(200px);
+    transform: scale(1.2) translateZ(10px) translateX(150px);
   }
   50% {
     transform: scale(1) translateZ(0) translateX(0);
   }
   75% {
-    transform: scale(1.2) translateZ(10px) translateX(-200px);
+    transform: scale(1.2) translateZ(10px) translateX(-150px);
   }
   100% {
     transform: scale(1) translateZ(0) translateX(0);
@@ -107,13 +107,13 @@
     transform: scale(0.9) translateZ(0) translateX(0);
   }
   25% {
-    transform: scale(1.2) translateZ(10px) translateX(-80px);
+    transform: scale(1.2) translateZ(10px) translateX(-50px);
   }
   50% {
     transform: scale(0.9) translateZ(0) translateX(0);
   }
   75% {
-    transform: scale(1.2) translateZ(10px) translateX(80px);
+    transform: scale(1.2) translateZ(10px) translateX(50px);
   }
   100% {
     transform: scale(0.9) translateZ(0) translateX(0);
@@ -124,13 +124,13 @@
     transform: scale(0.9) translateZ(0) translateX(0);
   }
   25% {
-    transform: scale(1.2) translateZ(10px) translateX(80px);
+    transform: scale(1.2) translateZ(10px) translateX(50px);
   }
   50% {
     transform: scale(0.9) translateZ(0) translateX(0);
   }
   75% {
-    transform: scale(1.2) translateZ(10px) translateX(-80px);
+    transform: scale(1.2) translateZ(10px) translateX(-50px);
   }
   100% {
     transform: scale(0.9) translateZ(0) translateX(0);
