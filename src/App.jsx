@@ -50,6 +50,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/*" element={<ScrollToSectionOnRouteChange />} />
+        <Route path="/produtos" element={<ScrollToSectionOnRouteChange />} />
+        <Route path="/sobre" element={<ScrollToSectionOnRouteChange />} />
+        <Route path="/contato" element={<ScrollToSectionOnRouteChange />} />
       </Routes>
       <Footer />
       <WhatsappIcon />

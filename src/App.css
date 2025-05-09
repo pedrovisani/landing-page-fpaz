@@ -94,7 +94,7 @@
 }
 .flex-start-center {
   display: flex;
-  align-items: start ;
+  align-items: start;
   justify-content: center;
 }
 .flex-center-end {
