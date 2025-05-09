@@ -15,12 +15,12 @@ export function AnimatedProductContent({ id, className = '', children }) {
           const products = section.querySelectorAll('.products-content');
           products.forEach((el) => {
             el.style.transitionDelay = `0ms`;
-            el.classList.add('x-appear');
+            el.classList.add('y-appear');
           });
         } else {
           const products = section.querySelectorAll('.products-content');
           products.forEach((el) => {
-            el.classList.remove('x-appear');
+            el.classList.remove('y-appear');
             el.style.transitionDelay = '0ms';
           });
         }
