@@ -188,12 +188,12 @@
   }
 }
 
-@media (min-height: 300px) {
+@media (max-height: 300px) {
    .menu-spacing {
-    min-height: 6.5rem;
+    min-height: 5.5rem;
   }
   .menu {
-    min-height: 6.5rem;
+    min-height: 5.5rem;
   }
 }
 
