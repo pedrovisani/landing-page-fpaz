@@ -13,8 +13,8 @@ export function AnimatedProductContent({ id, className = '', children }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           const products = section.querySelectorAll('.products-content');
-          products.forEach((el, index) => {
-            el.style.transitionDelay = `${index * 100}ms`;
+          products.forEach((el) => {
+            el.style.transitionDelay = `0ms`;
             el.classList.add('x-appear');
           });
         } else {
