@@ -22,11 +22,6 @@ function NavMobile({ showNavMobile, setShowNavMobile }) {
               <p>Sobre nós</p>
             </li>
           </Link>
-          <Link to="/simulador">
-            <li onClick={() => setShowNavMobile(false)} className={styles['menu-btn']}>
-              <p>Simulador</p>
-            </li>
-          </Link>
           <Link to="/contato">
             <li onClick={() => setShowNavMobile(false)} className={styles['menu-btn']}>
               <p>Contato</p>

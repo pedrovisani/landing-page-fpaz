@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
-  gap: 16px;
+  gap: 20px;
 }
 
 :global(.products-content) {
@@ -66,20 +66,20 @@
 .product-details button:has(i) {
   width: 100%;
   font-weight: 600;
-  background-color: var(--color-primary-one);
+  background-color: rgb(37, 211, 102);
   border: 1px solid transparent;
   animation: gentle-appear linear 700ms normal;
 }
 .product-details button:has(i):hover {
-  background-color: rgba(58, 77, 75, 0.8);
+  background-color: rgba(37, 211, 102, 0.8);
 }
 .product-details button:has(i):active {
   background-color: transparent;
-  border-color: rgba(58, 77, 75, 0.8);
+  border-color: rgba(37, 211, 102, 0.8);
 }
 .product-details-title {
   color: var(--font-dark);
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   width: fit-content;
   height: fit-content;
@@ -111,24 +111,6 @@
 .product-details-description li h1 {
   font-size: 1.1rem;
   margin-bottom: 20px;
-}
-
-.i-return {
-  position: absolute;
-  color: var(--icon-dark);
-  border-radius: 100%;
-  border: 1px solid transparent;
-  background-color: transparent;
-  cursor: pointer;
-  top: 1rem;
-  left: 1rem;
-}
-.i-return:hover {
-  background-color: rgba(247, 247, 247, 0.8);
-}
-.i-return:active {
-  background-color: transparent;
-  border-color: rgba(247, 247, 247, 0.8);
 }
 
 @media (max-width: 1100px) {

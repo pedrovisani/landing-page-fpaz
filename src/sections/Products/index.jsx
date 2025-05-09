@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatedProductContent } from '../../functions/AnimatedProductContent';
 import Product01 from './Product01';
 import Product02 from './Product02';
 import Product03 from './Product03';
@@ -13,7 +14,7 @@ function Products() {
 
   if (productTab == '') {
     return (
-      <section id="produtos" className="section main-bg">
+      <AnimatedProductContent id="produtos" className="section main-bg">
         <div className={`${styles['products-container']} flex-center wh-100`}>
           <div className={`${styles['products']} wh-100 pr`}>
             <div className="products-content">
@@ -97,7 +98,7 @@ function Products() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedProductContent>
     );
   } else if (productTab == 'product-01') {
     return (

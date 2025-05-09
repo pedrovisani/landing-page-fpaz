@@ -1,5 +1,5 @@
 .simulator-container {
-  background-color: rgba(247, 247, 247, 0.7);
+  background-color: #ffffff;
   padding: 5.5rem 32px 5.5rem 32px;
   border-radius: 12px;
 }
@@ -8,9 +8,23 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   width: 60%;
   height: 100%;
+}
+.simulator-form button:has(i) {
+  width: 100%;
+  font-weight: 600;
+  background-color: rgb(37, 211, 102);
+  border: 1px solid transparent;
+  animation: gentle-appear linear 700ms normal;
+}
+.simulator-form button:has(i):hover {
+  background-color: rgba(37, 211, 102, 0.8);
+}
+.simulator-form button:has(i):active {
+  background-color: transparent;
+  border-color: rgba(37, 211, 102, 0.8);
 }
 .fields-form {
   display: flex;

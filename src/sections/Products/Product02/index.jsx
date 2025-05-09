@@ -4,10 +4,7 @@ import styles from '../Products.module.css';
 function Product02({ setProductTab }) {
   return (
     <div className="flex-end-center wh-100 pr">
-      <i
-        onClick={() => setProductTab('')}
-        className={`${styles['i-return']} flex-center i-p icon-arrow-left`}
-      ></i>
+      <i onClick={() => setProductTab('')} className="i-return flex-center i-p icon-arrow-left"></i>
       <div className={styles['product-details']}>
         <div className="flex-column gap-28">
           <p className={styles['product-details-title']}>CRÉDITO PESSOAL</p>
@@ -112,7 +109,7 @@ function Product02({ setProductTab }) {
             className="flex-center flex-row gap-8"
           >
             <h1>Fale com um consultor</h1>
-            <i className="icon-wpp h-100"></i>
+            <i className="icon-wpp i-p h-100"></i>
           </button>
         </div>
       </div>

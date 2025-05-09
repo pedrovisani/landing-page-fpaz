@@ -3,7 +3,7 @@ import { clearFormat, coinFormat } from './monetaryFunctions.js';
 import styles from './Simulator.module.css';
 import SelectProduct from './SelectProduct/index.jsx';
 
-function Simulator() {
+function Simulator({ setProductTab }) {
   const coinMonthlyCost = [0.018, 0.02, 0.04, 0.05, 0.0246];
   const capitalExample = ['50.000', '100.000', '30.000', '0.00', '8.000'];
   const minPeriodPayment = [6, 30, 30, 9, 6];
@@ -52,10 +52,14 @@ function Simulator() {
 
   if (!simulationDetails) {
     return (
-      <div className={`${styles['simulator-container']} flex-center wh-100`}>
+      <div id="produtos" className={`${styles['simulator-container']} flex-center wh-100 pr`}>
+        <i
+          onClick={() => setProductTab('')}
+          className="i-return flex-center i-p icon-arrow-left"
+        ></i>
         <form onSubmit={handleSubmit} className={styles['simulator-form']}>
           <fieldset className={styles['fields-form']}>
-            <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
+            <legend className={styles['legend-form']}>SIMULE O SEU CONSÓRCIO!</legend>
             <SelectProduct product={product} setProduct={setProduct} />
             <label htmlFor="capital">Valor desejado (R$)</label>
             <input
@@ -92,10 +96,14 @@ function Simulator() {
     );
   } else {
     return (
-      <div className={`${styles['simulator-container']} flex-center wh-100`}>
+      <div className={`${styles['simulator-container']} flex-center wh-100 pr`}>
+        <i
+          onClick={() => setProductTab('')}
+          className="i-return flex-center i-p icon-arrow-left"
+        ></i>
         <form onSubmit={handleSubmit} className={styles['simulator-form']}>
           <fieldset className={styles['fields-form']}>
-            <legend className={styles['legend-form']}>FAÇA SUA SIMULAÇÃO</legend>
+            <legend className={styles['legend-form']}>RESULTADO DA SIMULAÇÃO</legend>
             <SelectProduct product={product} setProduct={setProduct} />
             <label htmlFor="capital">Valor desejado (R$)</label>
             <input
@@ -150,6 +158,15 @@ function Simulator() {
             />
           </fieldset>
           <button type="submit">Simular</button>
+          <button
+            onClick={() => {
+              window.open('https://wa.me/5581991167312', '_blank', 'noopener,noreferrer');
+            }}
+            className="flex-center flex-row gap-8"
+          >
+            <h1>Fale com um consultor</h1>
+            <i className="icon-wpp i-p h-100"></i>
+          </button>
         </form>
       </div>
     );

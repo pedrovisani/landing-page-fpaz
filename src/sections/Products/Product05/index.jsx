@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Simulator from './Simulator';
 import styles from '../Products.module.css';
 
@@ -10,7 +11,7 @@ function Product05({ setProductTab }) {
       <div className="flex-end-center wh-100 pr">
         <i
           onClick={() => setProductTab('')}
-          className={`${styles['i-return']} flex-center i-p icon-arrow-left`}
+          className="i-return flex-center i-p icon-arrow-left"
         ></i>
         <div className={styles['product-details']}>
           <div className="flex-column gap-28">
@@ -101,14 +102,15 @@ function Product05({ setProductTab }) {
                 </li>
               </ol>
             </div>
-
-            <button onClick={() => setSimulatorTab(!simulatorTab)}>Faça uma simulação</button>
+            <Link to="/produtos">
+              <button onClick={() => setSimulatorTab(!simulatorTab)}>Faça uma simulação</button>
+            </Link>
           </div>
         </div>
       </div>
     );
   } else {
-    return <Simulator />;
+    return <Simulator setProductTab={setProductTab} />;
   }
 }
 
