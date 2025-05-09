@@ -7,9 +7,13 @@
   padding: 24px;
   background-color: var(--color-secondary);
 }
+.footer p {
+  font-size: 0.8rem;
+  text-align: center;
+}
 
 @media (max-width: 800px) {
   .footer p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
