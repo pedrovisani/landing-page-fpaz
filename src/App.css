@@ -117,12 +117,12 @@
 }
 
 .main-bg {
-  background-image: url('./assets/backgrounds/main-bg.svg');
+  background-image: url('../public/backgrounds/main-bg.png');
   background-size: cover;
   background-position: center center;
 }
 .worker-bg {
-  background-image: url('./assets/backgrounds/worker-bg.svg');
+  background-image: url('../public/backgrounds/worker-bg.png');
   background-size: cover;
   background-position: center center;
 }
