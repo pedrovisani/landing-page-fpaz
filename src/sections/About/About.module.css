@@ -9,7 +9,7 @@
   font-size: 1.8rem;
 }
 .about-container strong {
-  color: var(--text-light);
+  color: var(--white);
 }
 
 .value {
